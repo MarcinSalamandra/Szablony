@@ -47,7 +47,7 @@ double Vector<Complex, DIMENSION>::length() const {
     Complex helper;
 
     for(int i = 0; i < DIMENSION; i++) {
-        helper = this->data[i] * (this->data[i]).coupling();
+        helper = this->data[i] * this->data[i].coupling();
         length += helper.get_re();
     }
     return sqrt(length);
