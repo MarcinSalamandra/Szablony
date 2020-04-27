@@ -1,4 +1,4 @@
-CFLAGS=-Wall -pedantic
+CFLAGS=-Wall -pedantic -std=c++17
 LFLAGS=-lm
 OBJS=main.o Lzespolona.o mym.o
 EXEC=open
