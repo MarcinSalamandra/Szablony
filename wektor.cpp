@@ -59,23 +59,10 @@ double Vector<Complex, DIMENSION>::length() const {
 
 template <class TYPE, int SIZE>
 TYPE Vector<TYPE, SIZE>::operator * (const Vector<TYPE, SIZE> & V2) const {
-    TYPE result = 0;
+    TYPE result;
+    result = 0;
 
     for(int i = 0; i < SIZE; i++) {        // mnozymy kolejne pola i dodajemy
-        result += this->data[i] * V2[i];
-    }
-    return result;
-}
-
-/************************************************************************************
-* Specjalizacja do przeciazenia operatora mnozenia wektorow z liczbami zespolonymi  *
-************************************************************************************/
-
-template <>
-Complex Vector<Complex, DIMENSION>::operator * (const Vector<Complex, DIMENSION> & V2) const {
-    Complex result(0, 0);
-
-    for(int i = 0; i < DIMENSION; i++) {        // mnozymy kolejne pola i dodajemy
         result += this->data[i] * V2[i];
     }
     return result;

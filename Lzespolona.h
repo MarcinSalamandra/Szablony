@@ -28,6 +28,7 @@ class Complex {
         Complex operator * (const double & multipler) const;
         Complex operator / (const Complex & Cn2) const;
         Complex operator / (const double & bottom) const;
+        void operator = (const double & number);
 
         bool operator == (const Complex & Cn2) const;
         bool operator != (const Complex & Cn2) const;

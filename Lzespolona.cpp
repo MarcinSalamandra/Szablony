@@ -154,6 +154,11 @@ Complex Complex::operator / (const double & bottom) const {
     return result;
 }
 
+void Complex::operator = (const double & number) {
+    this->re = number;
+    this->im = 0;
+}
+
 /************************************************
 * Funkcja liczaca sprzezenie liczby zespolonej  *
 ************************************************/
