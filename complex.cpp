@@ -323,7 +323,4 @@ double abs(const Complex & Cn) {
     return result;
 }
 
-
-
-
-
+      

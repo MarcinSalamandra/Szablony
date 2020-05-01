@@ -1,8 +1,8 @@
 #ifndef VECTOR_H
 #define VECTOR_H
-
+ 
 #define DIMENSION 5
-
+ 
 #include "complex.h"
 
 // szablon klasy wektora
