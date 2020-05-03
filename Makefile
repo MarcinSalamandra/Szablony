@@ -1,6 +1,6 @@
 CFLAGS=-Wall -pedantic -std=c++17
 LFLAGS=-lm
-OBJS=main.o complex.o vector_templates.o matrix_templates.o equation_templates.o
+OBJS=main.o complex.o compile_vector.o compile_matrix.o compile_equation.o
 EXEC=open
 
 all: $(EXEC)
@@ -13,11 +13,9 @@ $(EXEC): $(OBJS)
 
 main.o: equation.h
 complex.o: complex.h
-vector_templates.o: vector.h
-matrix_templates.o: matrix.h
-equation_templates.o: equation.h
-
-
+compile_vector.o: vector.h
+compile_matrix.o: matrix.h
+compile_equation.o: equation.h
 
 clean:
 	rm -f *~
